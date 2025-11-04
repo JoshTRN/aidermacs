@@ -68,9 +68,9 @@ For **Spacemacs** users:
 1. Add `aidermacs` to your `dotspacemacs-additional-packages` list in your `.spacemacs` file:
 ```emacs-lisp
 dotspacemacs-additional-packages '(
-  (aidermacs :variables
-              aidermacs-default-chat-mode 'architect
-              aidermacs-default-model "sonnet")
+        (aidermacs :location (recipe
+                              :fetcher github
+                              :repo "MatthewZMD/aidermacs"))
 )
 ```
 
